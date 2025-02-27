@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Multiple Projects</title>
+  <style>
+    /* Body and background settings */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #2a0a4b     ;
+      /* background-image: url('images/bgimage.webp');
+      Your background image URL */
+      background-size: cover;
+      /* Ensures the background covers the entire page */
+      background-position: center;
+      /* Centers the background image */
+      background-attachment: fixed;
+      /* Keeps the background fixed while scrolling */
+      background-repeat: no-repeat;
+      /* Prevents repeating the background */
+      height: 100vh;
+      /* Ensures the background covers the full height of the screen */
+    }
+
+    .project-section {
+      padding: 40px 20px;
+      text-align: center;
+      z-index: 2;
+      /* Keeps content above background */
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #fff;
+      /* White text for contrast */
+    }
+
+    .scroll-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 20px;
+      max-width: 100%;
+      scroll-snap-type: x mandatory;
+      justify-content: start;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      flex-shrink: 0;
+      scroll-snap-align: start;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card-content {
+      padding: 10px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0;
+      color: #333;
+      text-align: center;
+    }
+
+    .card-description {
+      font-size: 14px;
+      color: #555;
+      margin-top: 8px;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card:hover img {
+      transform: scale(1.1);
+    }
+
+    /* Media Queries for responsiveness */
+    @media (max-width: 768px) {
+      
+
+      .project-section {
+        padding: 20px 10px;
+      }
+
+      .section-title {
+        font-size: 20px;
+      }
+
+      .card {
+        width: 200px;
+        /* Adjust card size for smaller screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      
+
+      .section-title {
+        font-size: 18px;
+      }
+
+      .card {
+        width: 180px;
+        /* Further adjust card size for very small screens */
+      }
+    }
+    .background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+  </style>
+</head>
+
+<body>
+
+  <div class="project-section" id="netflix">
+    <h2 class="section-title" style="color: #dee2e5; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">Netflix Content
+      Analysis</h2>
+    <div class="scroll-container">
+      <div class="card">
+        <img src="images/Netflix/image1.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Netflix/image2.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Netflix/image3.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Netflix/image4.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Netflix/image5.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Netflix/image6.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Netflix/image7.png" alt="">
+      </div>
+      <!-- Add more cards here -->
+    </div>
+  </div>
+
+  <div class="project-section" id="covid">
+    <h2 class="section-title" style="color: #dee2e5; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">Covid-19 Data
+      Analysis</h2>
+    <div class="scroll-container">
+      <div class="card">
+        <img src="images/Covid/image2.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Covid/image6.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Covid/image4.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Covid/image5.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Covid/image3.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Covid/image7.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Covid/image8.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Covid/image9.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Covid/image10.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Covid/image11.png" alt="">
+      </div>
+      <!-- Add more cards here -->
+    </div>
+  </div>
+
+
+  <div class="project-section" id="zomato">
+    <h2 class="section-title" style="color: #dee2e5; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">Zomato Data Analysis
+    </h2>
+    <div class="scroll-container">
+      <div class="card">
+        <img src="images/Zomato/image1.jpg" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Zomato/image2.jpg" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Zomato/image3.jpg" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Zomato/image4.jpg" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Zomato/image5.jpg" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Zomato/image6.jpg" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Zomato/image7.jpg" alt="">
+      </div>
+      <!-- Add more cards here -->
+    </div>
+  </div>
+
+  <div class="project-section" id="titanic">
+    <h2 class="section-title" style="color: #dee2e5; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">Titanic Survival Data
+      Analysis</h2>
+    <div class="scroll-container">
+      <div class="card">
+        <img src="images/Titanic/image1.jpg" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Titanic/image2.jpg" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Titanic/image3.jpg" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Titanic/image4.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="project-section" id="game">
+    <h2 class="section-title" style="color: #dee2e5; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">Game Data Analysis
+    </h2>
+    <div class="scroll-container">
+      <div class="card">
+        <img src="images/Game/image1.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Game/image2.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Game/image3.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Game/image4.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Game/image5.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Game/image6.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Game/image7.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Game/image8.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Game/image9.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Game/image10.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Game/image11.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="project-section" id="churn">
+    <h2 class="section-title" style="color: #dee2e5; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">Customer Churn Data
+      Analysis
+    </h2>
+    <div class="scroll-container">
+      <div class="card">
+        <img src="images/Churn/image1.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Churn/image2.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Churn/image3.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Churn/image4.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Churn/image5.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Churn/image6.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Churn/image7.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Churn/image8.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Churn/image9.png" alt="">
+      </div>
+      <div class="card">
+        <img src="images/Churn/image10.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="project-section" id="powerbi">
+    <h2 class="section-title" style="color: #dee2e5; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">PowerBI Dashboard
+    </h2>
+    <div class="scroll-container">
+      <div class="card">
+        <img src="images/PowerBi/image1.jpg" alt="">
+      </div>
+      <div class="card">
+        <img src="images/PowerBi/image2.jpg" alt="">
+      </div>
+      <div class="card">
+        <img src="images/PowerBi/image3.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
